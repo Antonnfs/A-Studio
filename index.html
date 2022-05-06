@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.css?_v=20220506125142">
+	<link rel="stylesheet" href="css/style.css?_v=20220506215346">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,24 +16,24 @@
 	<div class="wrapper">
 		<header data-scroll-show class="header">
 			<div class="header__container">
-				<a href="#" class="header__logo logo"><span>A+</span>&nbsp;Studio</a>
+				<a href="#" class="header__logo logo"><strong>A+</strong>&nbsp;Studio</a>
 				<div class="header__menu menu">
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">What We Do</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Service</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Project</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+							<li class="menu__item"><button data-goto="#home" data-goto-header type="button" class="menu__link">Home</button></li>
+							<li class="menu__item"><button data-goto="#about" data-goto-header type="button" class="menu__link">What We Do</button></li>
+							<li class="menu__item"><button data-goto="#service" data-goto-header type="button" class="menu__link">Service</button></li>
+							<li class="menu__item"><button data-goto="#about" data-goto-header type="button" class="menu__link">Project</button></li>
+							<li class="menu__item"><button data-goto="#blog" data-goto-header type="button" class="menu__link">Blog</button></li>
+							<li class="menu__item"><button data-goto="#contact" data-goto-header type="button" class="menu__link">Contact</button></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
 		</header>
 		<main class="page">
-			<section class="home">
+			<section id="home" class="home">
 				<div class="home__container">
 					<div class="home__content">
 						<div class="home__info info-block">
@@ -42,15 +42,13 @@
 							<button class="info-block__button button">Contact Now</button>
 						</div>
 						<picture class="home__image-ibg">
-							<!--<source srcset="img/home_image_mobile.png" media="(max-width: 767px)">-->
 							<source srcset="img/home_image_tablet.png" media="(max-width: 992px)">
-
 							<img src="img/home_image.png" alt="conference">
 						</picture>
 					</div>
 				</div>
 			</section>
-			<section class="client">
+			<section id="client" class="client">
 				<div class="client__container">
 					<div class="client__info info-block">
 						<h2 class="info-block__title">Our Client</h2>
@@ -64,7 +62,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="service">
+			<section id="service" class="service">
 				<div class="service__container">
 					<div class="service__info info-block">
 						<h2 class="info-block__title">How can we help your Business ?</h2>
@@ -103,7 +101,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="about">
+			<section id="about" class="about">
 				<div class="about__container">
 					<div class="about__video-ibg">
 						<iframe class="video-item" src="https://www.youtube.com/embed/Er3hsy5I1JQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -114,7 +112,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="blog">
+			<section id="blog" class="blog">
 				<div class="blog__container">
 					<div class="blog__header info-block">
 						<h2 class="info-block__title">What our happy client say</h2>
@@ -179,25 +177,80 @@
 					</div>
 				</div>
 			</section>
+			<section id="contact" class="contact">
+				<div class="contact__container">
+					<div class="contact__content">
+						<div class="contact__info info-block">
+							<h2 class="info-block__title">Subscribe Newsletter</h2>
+							<p class="info-block__text info-block__text_bigger">I will update good news and promotion service not spam</p>
+						</div>
+						<form action="#" class="contact__form">
+							<input type="text" class="contact__input" placeholder="Enter your email address..">
+							<button class="contact__button button">Contact&nbsp;Now</button>
+						</form>
+					</div>
+				</div>
+			</section>
 		</main>
-		<footer class="footer">
+		<footer id="footer" class="footer">
 			<div class="footer__container">
+				<div class="footer__content">
+					<div class="footer__info ">
+						<a href="#" class="footer__logo logo"><strong>A+</strong>&nbsp;Studio</a>
+						<p class="footer__text">Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.</p>
+						<ul class="footer__links">
+							<li class="footer__item">
+								<a href="#" class="footer__link"><img src="img/footer/facebook.svg" alt=""></a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link"><img src="img/footer/twitter.svg" alt=""></a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link"><img src="img/footer/linkedin.svg" alt=""></a>
+							</li>
+						</ul>
+					</div>
+					<div data-spollers="992,max" data-one-spoller class="footer__spollers spollers">
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">What We Do</button>
+							<ul class="spollers__body">
+								<li class="spollers__link"><a href="#">Web Design</a></li>
+								<li class="spollers__link"><a href="#">App Design</a></li>
+								<li class="spollers__link"><a href="#">Social Media Manage</a></li>
+								<li class="spollers__link"><a href="#">Market Analysis Project</a></li>
+							</ul>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Company</button>
+							<ul class="spollers__body">
+								<li class="spollers__link"><a href="#">About Us</a></li>
+								<li class="spollers__link"><a href="#">Career</a></li>
+								<li class="spollers__link"><a href="#">Become Investor</a></li>
+							</ul>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Support</button>
+							<ul class="spollers__body">
+								<li class="spollers__link"><a href="#">FAQ</a></li>
+								<li class="spollers__link"><a href="#">Policy</a></li>
+								<li class="spollers__link"><a href="#">Business</a></li>
+							</ul>
+						</div>
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Contact</button>
+							<ul class="spollers__body">
+								<li class="spollers__link"><a href="#">WhatsApp</a></li>
+								<li class="spollers__link"><a href="#">Support 24</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<p class="footer__author">Copyright © 2022 Avi Yansah</p>
 			</div>
 		</footer>
 	</div>
-	<!-- 
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-			</div>
-		</div>
-	</div>
-</div>
- -->
-
-	<script src="js/app.min.js?_v=20220506125142"></script>
+	<script src="js/app.js?_v=20220506215346"></script>
 </body>
 
 </html>
